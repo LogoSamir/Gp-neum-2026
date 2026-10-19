@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="bs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Velika nagrada Neuma 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;600;700;800;900&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#E9EDF1; --surface:#FFFFFF; --surface-2:#F4F6F8; --ink:#131A22; --muted:#56616E; --line:#CBD3DC;
+  --signal:#D11A24; --signal-soft:rgba(209,26,36,.12);
+  --skoda:#118A4C; --hyundai:#1E63B8; --audi:#5E6772;
+  --bulb-off:#2A2F36; --track:#B9C2CC;
+  --display:"Saira Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F151C; --surface:#17202A; --surface-2:#1C2733; --ink:#EEF2F6; --muted:#97A3B1; --line:#2A3644;
+    --signal:#F0313A; --signal-soft:rgba(240,49,58,.16);
+    --skoda:#3CC27A; --hyundai:#5AA3F0; --audi:#C3CAD3;
+    --bulb-off:#222A33; --track:#34414F;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F151C; --surface:#17202A; --surface-2:#1C2733; --ink:#EEF2F6; --muted:#97A3B1; --line:#2A3644;
+  --signal:#F0313A; --signal-soft:rgba(240,49,58,.16);
+  --skoda:#3CC27A; --hyundai:#5AA3F0; --audi:#C3CAD3;
+  --bulb-off:#222A33; --track:#34414F;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+img{max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--signal);outline-offset:3px}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1180px;margin:0 auto;padding:0 20px;display:flex;align-items:center;gap:24px;height:56px}
+.brand{font-family:var(--display);font-weight:800;font-size:20px;letter-spacing:.02em;text-decoration:none;display:flex;align-items:center;gap:10px;white-space:nowrap}
+.brand i{display:block;width:22px;height:12px;background:var(--signal);transform:skewX(-20deg)}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.nav ul::-webkit-scrollbar{display:none}
+.nav a.l{display:block;padding:8px 10px;font-family:var(--display);font-weight:600;font-size:16px;color:var(--muted);text-decoration:none;white-space:nowrap;border-radius:4px}
+.nav a.l:hover{color:var(--ink);background:var(--surface-2)}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+section{padding:72px 0;border-bottom:1px solid var(--line)}
+.sec-head{display:grid;grid-template-columns:auto 1fr;gap:4px 20px;align-items:end;margin-bottom:36px}
+.sec-head .tag{grid-row:span 2;font-family:var(--display);font-weight:900;font-size:64px;line-height:.8;color:var(--signal);transform:skewX(-12deg)}
+h2{font-family:var(--display);font-weight:800;font-size:clamp(34px,5vw,52px);line-height:1;margin:0;letter-spacing:-.01em}
+.sec-head p{margin:0;color:var(--muted);max-width:62ch}
+
+/* hero */
+.hero{padding:56px 0 64px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-8%;top:0;bottom:0;width:46%;background:repeating-linear-gradient(-68deg,transparent 0 22px,var(--line) 22px 24px);opacity:.55;pointer-events:none;-webkit-mask-image:linear-gradient(90deg,transparent,#000 60%);mask-image:linear-gradient(90deg,transparent,#000 60%)}
+.hero-in{position:relative;z-index:1}
+.event{font-family:var(--display);font-weight:600;font-size:18px;color:var(--muted);margin:0 0 18px}
+.hero h1{font-family:var(--display);font-weight:900;font-size:clamp(56px,11vw,148px);line-height:.86;margin:0;letter-spacing:-.02em;transform:skewX(-8deg);transform-origin:left bottom}
+.hero h1 span{display:block}
+.route-line{font-family:var(--display);font-weight:700;font-size:clamp(20px,2.6vw,28px);margin:22px 0 0;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
+.route-line b{width:28px;height:3px;background:var(--signal);display:inline-block}
+
+.lights-box{margin-top:44px;display:flex;flex-wrap:wrap;align-items:center;gap:28px}
+.lights{display:flex;gap:10px;padding:14px 16px;background:#0B0E12;border-radius:10px}
+.light{display:flex;flex-direction:column;gap:8px;padding:8px;background:#1A1F26;border-radius:8px}
+.bulb{width:30px;height:30px;border-radius:50%;background:var(--bulb-off);transition:background .08s,box-shadow .08s}
+.light.on .bulb.r{background:#F0242E;box-shadow:0 0 18px 2px rgba(240,36,46,.75)}
+.lights-msg{min-height:84px;display:flex;flex-direction:column;justify-content:center}
+.lights-msg .small{font-family:var(--display);font-weight:600;font-size:18px;color:var(--muted);margin:0}
+.lights-msg .big{font-family:var(--display);font-weight:900;font-size:clamp(36px,5vw,56px);line-height:1;margin:0;opacity:0;transform:translateX(-12px);transition:opacity .35s,transform .35s}
+.lights-msg.go .big{opacity:1;transform:none}
+.replay{font-family:var(--display);font-weight:600;font-size:16px;background:none;border:1px solid var(--line);color:var(--ink);border-radius:6px;padding:8px 14px;cursor:pointer}
+.replay:hover{border-color:var(--ink)}
+
+.strip{margin-top:48px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border:1px solid var(--line);border-radius:10px;background:var(--surface);overflow:hidden}
+.strip div{padding:16px 18px;border-left:1px solid var(--line)}
+.strip div:first-child{border-left:0}
+.strip dt{font-size:14px;color:var(--muted)}
+.strip dd{margin:2px 0 0;font-family:var(--display);font-weight:800;font-size:34px;line-height:1}
+.strip .hot dd{color:var(--signal)}
+
+/* teams */
+.grid-teams{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.team{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;position:relative}
+.team-bar{height:6px;background:var(--team)}
+.team-top{display:flex;justify-content:space-between;align-items:flex-start;padding:20px 20px 0}
+.team-top .pos{font-family:var(--display);font-weight:900;font-size:88px;line-height:.78;color:var(--team);transform:skewX(-10deg);opacity:.95}
+.team-top .car{text-align:right}
+.team-top h3{font-family:var(--display);font-weight:800;font-size:28px;line-height:1;margin:0}
+.team-top .car p{margin:4px 0 0;color:var(--muted);font-size:14px}
+.role{margin:16px 20px 0;display:inline-flex;align-self:flex-start;align-items:center;gap:8px;font-family:var(--display);font-weight:700;font-size:16px;padding:4px 12px;border-radius:4px;background:color-mix(in srgb,var(--team) 14%,transparent);color:var(--ink)}
+.role::before{content:"";width:10px;height:10px;background:var(--team);transform:skewX(-20deg)}
+.driver{display:flex;gap:16px;align-items:center;padding:20px}
+.avatar{position:relative;flex:none;width:112px;height:112px;border-radius:50%;padding:0;border:3px solid var(--team);background:var(--surface-2);cursor:pointer;overflow:hidden;color:var(--team)}
+.avatar.sm{width:58px;height:58px;border-width:2px}
+.avatar img{width:100%;height:100%;object-fit:cover;display:block}
+.avatar svg{width:100%;height:100%;display:block}
+.avatar .plus{position:absolute;right:6px;bottom:6px;width:26px;height:26px;border-radius:50%;background:var(--ink);color:var(--bg);font:700 18px/26px var(--body);text-align:center}
+.avatar.sm .plus{width:18px;height:18px;font-size:13px;line-height:18px;right:2px;bottom:2px}
+.avatar.has .plus{display:none}
+.avatar:hover{filter:brightness(1.05)}
+.who .lbl{font-size:13px;color:var(--muted);margin:0}
+.name{font-family:var(--display);font-weight:800;font-size:30px;line-height:1.05;margin:2px 0 0;text-transform:uppercase;outline:none;border-bottom:1px dashed transparent;min-width:4ch;display:inline-block}
+.name:hover,.name:focus{border-bottom-color:var(--muted)}
+.pname{font-family:var(--display);font-weight:600;font-size:16px;line-height:1.1;outline:none;border-bottom:1px dashed transparent;display:inline-block;max-width:100%;overflow-wrap:anywhere}
+.pname:hover,.pname:focus{border-bottom-color:var(--muted)}
+.crew{padding:0 20px 20px;display:flex;flex-wrap:wrap;gap:14px}
+.crew .p{display:flex;flex-direction:column;align-items:center;gap:6px;width:80px;text-align:center}
+.team-stats{margin-top:auto;display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.team-stats div{padding:12px 20px}
+.team-stats div+div{border-left:1px solid var(--line)}
+.team-stats dt{font-size:13px;color:var(--muted)}
+.team-stats dd{margin:0;font-family:var(--display);font-weight:700;font-size:20px;line-height:1.2}
+.hint{margin:20px 0 0;color:var(--muted);font-size:14px}
+
+/* podium */
+.edit-bar{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;margin:-12px 0 28px}
+.edit-bar[hidden]{display:none}
+.edit-btn{font-family:var(--display);font-weight:700;font-size:17px;border:1px solid var(--ink);background:none;color:var(--ink);border-radius:6px;padding:8px 16px;cursor:pointer}
+.edit-btn[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.edit-status{font-size:14px;color:var(--muted)}
+.edit-status.err{color:var(--signal)}
+.podium{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.14fr) minmax(0,1fr);gap:20px;align-items:end;padding-top:12px}
+.pcol{display:flex;flex-direction:column;min-width:0}
+.pcard{background:var(--surface);border:1px solid var(--line);border-bottom:0;border-radius:14px 14px 0 0;overflow:hidden;display:flex;flex-direction:column}
+.p1 .pcard{border-color:var(--team);border-width:2px 2px 0}
+.slot{position:relative;display:block;padding:0;border:0;margin:0;background:none;color:var(--team);overflow:hidden;font:inherit}
+.slot:disabled{cursor:default}
+.slot img{display:block;width:100%;height:100%;object-fit:cover}
+.slot svg{display:block;width:100%;height:100%}
+.cue{position:absolute;inset:auto 8px 8px auto;font-family:var(--display);font-weight:700;font-size:14px;line-height:1;padding:6px 10px;border-radius:4px;background:var(--ink);color:var(--bg);display:none;white-space:nowrap}
+.editing .slot:not(:disabled){cursor:pointer;outline:2px dashed var(--team);outline-offset:-2px}
+.editing .slot:not(:disabled) .cue{display:block}
+.slot.busy::after{content:"";position:absolute;inset:0;background:var(--bg);opacity:.6}
+.car-shot{width:100%;aspect-ratio:16/10;background:linear-gradient(180deg,color-mix(in srgb,var(--team) 14%,var(--surface)) 0%,var(--surface-2) 100%)}
+.p1 .car-shot{aspect-ratio:16/11}
+.pdriver{display:flex;gap:14px;align-items:flex-end;padding:0 18px;margin-top:-46px;position:relative;z-index:1}
+.dphoto{flex:none;width:96px;height:96px;border-radius:50%;background:var(--surface-2);box-shadow:0 0 0 4px var(--surface),0 0 0 7px var(--team)}
+.p1 .dphoto{width:124px;height:124px}
+.dphoto .cue,.cphoto .cue{inset:auto 50% 6px auto;transform:translateX(50%);font-size:12px;padding:4px 7px}
+.pmeta{min-width:0;padding-bottom:4px}
+.pmeta .lbl{font-size:13px;color:var(--muted);margin:0}
+.dname{font-family:var(--display);font-weight:900;font-size:clamp(26px,3vw,36px);line-height:1;margin:2px 0 0;text-transform:uppercase;letter-spacing:.01em;overflow-wrap:anywhere;outline:none}
+.p1 .dname{font-size:clamp(30px,3.6vw,44px)}
+.carname{margin:4px 0 0;font-size:14px;color:var(--muted)}
+.pcard .role{margin:16px 18px 0}
+.crew{padding:16px 18px 20px;display:flex;flex-wrap:wrap;gap:14px}
+.crew .p{display:flex;flex-direction:column;align-items:center;gap:6px;width:72px;text-align:center}
+.cphoto{width:58px;height:58px;border-radius:50%;background:var(--surface-2);box-shadow:0 0 0 2px var(--team)}
+.pname{font-family:var(--display);font-weight:600;font-size:16px;line-height:1.1;overflow-wrap:anywhere;outline:none}
+.editing [data-name]{border-bottom:1px dashed var(--muted);cursor:text}
+.step{background:var(--surface-2);border:1px solid var(--line);border-top:6px solid var(--team);border-radius:0 0 10px 10px;display:flex;align-items:center;justify-content:center;gap:14px}
+.step b{font-family:var(--display);font-weight:900;font-size:64px;line-height:1;color:var(--team);transform:skewX(-10deg)}
+.step span{font-family:var(--display);font-weight:700;font-size:17px;line-height:1.15;color:var(--muted)}
+.p1 .step{height:150px}.p2 .step{height:104px}.p3 .step{height:72px}
+.p1 .step b{font-size:96px}
+.p3 .step b{font-size:48px}
+@media (max-width:960px){
+  .podium{grid-template-columns:1fr;gap:28px}
+  .p1{order:1}.p2{order:2}.p3{order:3}
+  .p1 .step,.p2 .step,.p3 .step{height:64px}
+  .p1 .step b,.step b{font-size:44px}
+}
+/* map */
+.map-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:24px;align-items:start}
+.map{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px;overflow-x:auto}
+.map svg{display:block;width:100%;min-width:520px;height:auto}
+.plan-switch{display:inline-flex;border:1px solid var(--line);border-radius:8px;padding:4px;background:var(--surface);margin-bottom:18px}
+.plan-switch button{font-family:var(--display);font-weight:700;font-size:17px;border:0;background:none;color:var(--muted);padding:8px 16px;border-radius:5px;cursor:pointer}
+.plan-switch button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.r-path{fill:none;stroke-linecap:round;stroke-linejoin:round;transition:stroke .25s,opacity .25s}
+.r-base{stroke:var(--track);stroke-width:14}
+.r-main{stroke:var(--ink);stroke-width:4}
+.r-alt{stroke:var(--muted);stroke-width:3;stroke-dasharray:8 8;opacity:.6}
+.r-alt.active{stroke:var(--signal);stroke-dasharray:none;stroke-width:4;opacity:1}
+.r-a.active{stroke:var(--signal)}
+.r-a.dim{stroke:var(--muted);stroke-dasharray:8 8;opacity:.6;stroke-width:3}
+.stop circle{fill:var(--surface);stroke:var(--ink);stroke-width:3}
+.stop.key circle{fill:var(--signal);stroke:var(--signal)}
+.stop text{font-family:var(--display);font-weight:700;font-size:18px;fill:var(--ink)}
+.stop text.sub{font-family:var(--body);font-weight:400;font-size:12.5px;fill:var(--muted)}
+.stop.b{opacity:.5;transition:opacity .25s}
+.stop.b.on{opacity:1}
+.sectors{display:flex;flex-direction:column;gap:12px}
+.sector{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:grid;grid-template-columns:auto 1fr auto;gap:4px 14px;align-items:baseline}
+.sector .s{font-family:var(--display);font-weight:900;font-size:22px;color:var(--signal)}
+.sector h3{margin:0;font-family:var(--display);font-weight:700;font-size:21px;line-height:1.15}
+.sector .km{font-family:var(--display);font-weight:700;font-size:20px;white-space:nowrap}
+.sector p{grid-column:2/4;margin:0;color:var(--muted);font-size:14px}
+.sector[hidden]{display:none}
+
+/* schedule */
+.sched{list-style:none;margin:0;padding:0;border-left:3px solid var(--line);margin-left:8px}
+.sched li{position:relative;display:grid;grid-template-columns:110px 1fr;gap:4px 24px;padding:14px 0 14px 28px}
+.sched li::before{content:"";position:absolute;left:-9px;top:24px;width:15px;height:15px;border-radius:50%;background:var(--bg);border:3px solid var(--muted)}
+.sched li.key::before{background:var(--signal);border-color:var(--signal)}
+.sched time{font-family:var(--display);font-weight:800;font-size:34px;line-height:1}
+.sched h3{margin:0;font-family:var(--display);font-weight:700;font-size:22px;line-height:1.2}
+.sched p{margin:2px 0 0;color:var(--muted);max-width:60ch}
+.sched li.key h3{color:var(--signal)}
+.note{margin:28px 0 0;padding:16px 20px;border-left:4px solid var(--signal);background:var(--signal-soft);border-radius:0 8px 8px 0;max-width:80ch}
+
+/* restaurants */
+.rest{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.rcard{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px;display:flex;flex-direction:column;gap:10px}
+.rcard.top{border:2px solid var(--signal)}
+.rcard .badge{align-self:flex-start;font-family:var(--display);font-weight:700;font-size:15px;background:var(--signal);color:#fff;padding:3px 10px;border-radius:4px}
+.rcard h3{margin:0;font-family:var(--display);font-weight:800;font-size:28px;line-height:1.05}
+.rcard .where{margin:0;color:var(--muted);font-size:14px}
+.rcard dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px}
+.rcard dt{font-family:var(--display);font-weight:700}
+.rcard dd{margin:0}
+.facts{margin-top:24px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.facts div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.facts dt{font-size:13px;color:var(--muted)}
+.facts dd{margin:2px 0 0;font-family:var(--display);font-weight:700;font-size:20px;line-height:1.2}
+
+/* rules */
+.rules{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.rule-col{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px}
+.rule-col h3{margin:0 0 12px;font-family:var(--display);font-weight:800;font-size:26px}
+.rule-col ol{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:10px}
+.rule-col li::marker{font-family:var(--display);font-weight:800;color:var(--signal)}
+.golden{margin:0 0 24px;padding:22px 24px;border-radius:12px;background:var(--ink);color:var(--bg);display:flex;gap:18px;align-items:center}
+.golden strong{font-family:var(--display);font-weight:900;font-size:52px;line-height:.9;color:var(--signal);transform:skewX(-10deg)}
+.golden p{margin:0;font-size:17px;max-width:70ch}
+.speed{margin-top:20px;display:flex;flex-wrap:wrap;gap:14px}
+.sign{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 16px 10px 10px}
+.sign b{width:52px;height:52px;border-radius:50%;border:6px solid #D11A24;background:#fff;color:#111;display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:20px}
+.sign span{font-size:14px;color:var(--muted);line-height:1.3}
+
+/* checklist */
+.checks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.cgroup{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px}
+.cgroup h3{margin:0;font-family:var(--display);font-weight:800;font-size:26px;display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.cgroup h3 small{font-weight:700;font-size:18px;color:var(--muted)}
+.meter{height:6px;background:var(--surface-2);border-radius:3px;margin:12px 0 16px;overflow:hidden}
+.meter i{display:block;height:100%;width:0;background:var(--signal);transition:width .25s}
+.cgroup label{display:flex;gap:12px;align-items:flex-start;padding:8px 0;border-top:1px solid var(--line);cursor:pointer}
+.cgroup input{margin:3px 0 0;width:18px;height:18px;accent-color:var(--signal);flex:none}
+.cgroup label:has(input:checked) span{color:var(--muted);text-decoration:line-through}
+.reset{margin-top:20px;font-family:var(--display);font-weight:600;font-size:16px;background:none;border:1px solid var(--line);color:var(--ink);border-radius:6px;padding:8px 14px;cursor:pointer}
+
+/* contacts */
+.tbl-wrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;min-width:560px}
+th,td{text-align:left;padding:14px 18px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+th{font-family:var(--display);font-weight:700;font-size:17px;background:var(--surface-2)}
+td.n{font-family:var(--display);font-weight:800;font-size:24px;white-space:nowrap}
+.planb{margin-top:24px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.planb div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.planb h3{margin:0 0 4px;font-family:var(--display);font-weight:700;font-size:20px}
+.planb p{margin:0;color:var(--muted)}
+
+footer{padding:40px 0 56px;color:var(--muted);font-size:14px}
+footer .flag{height:14px;margin-bottom:20px;background:conic-gradient(var(--ink) 25%,transparent 0 50%,var(--ink) 0 75%,transparent 0) 0 0/14px 14px;opacity:.85;border-radius:2px}
+
+@media (max-width:960px){
+  .grid-teams,.rules,.checks{grid-template-columns:1fr}
+  .map-grid{grid-template-columns:1fr}
+  .strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .strip div{border-left:0;border-top:1px solid var(--line)}
+  .strip div:nth-child(-n+2){border-top:0}
+  .strip div:nth-child(even){border-left:1px solid var(--line)}
+  .strip div:last-child{grid-column:span 2;border-left:0}
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:640px){
+  section{padding:52px 0}
+  .rest,.planb{grid-template-columns:1fr}
+  .sec-head .tag{font-size:44px}
+  .sched li{grid-template-columns:1fr;padding-left:22px}
+  .sched time{font-size:28px}
+  .bulb{width:22px;height:22px}
+  .golden{flex-direction:column;align-items:flex-start}
+  .avatar{width:92px;height:92px}
+}
+@media (prefers-reduced-motion:reduce){
+  .bulb,.lights-msg .big,.r-path,.meter i{transition:none}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Sekcije">
+  <div class="nav-in">
+    <a class="brand" href="#start"><i aria-hidden="true"></i>GP Neum 2026</a>
+    <ul>
+      <li><a class="l" href="#timovi">Timovi</a></li>
+      <li><a class="l" href="#staza">Staza</a></li>
+      <li><a class="l" href="#raspored">Raspored</a></li>
+      <li><a class="l" href="#dorucak">Doručak</a></li>
+      <li><a class="l" href="#pravila">Pravila</a></li>
+      <li><a class="l" href="#pregled">Tehnički pregled</a></li>
+      <li><a class="l" href="#kontakti">Kontrola utrke</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="start">
+  <div class="wrap hero-in">
+    <p class="event">Nedjelja, 18. 10. 2026. &nbsp;/&nbsp; 3 tima, 10 putnika, 1 cilj</p>
+    <h1><span>Velika nagrada</span><span>Neuma</span></h1>
+    <p class="route-line">Sarajevo <b aria-hidden="true"></b> Konjic <b aria-hidden="true"></b> Blagaj <b aria-hidden="true"></b> Stolac <b aria-hidden="true"></b> Neum</p>
+
+    <div class="lights-box">
+      <div class="lights" aria-hidden="true" id="lights">
+        <div class="light"><span class="bulb"></span><span class="bulb r"></span></div>
+        <div class="light"><span class="bulb"></span><span class="bulb r"></span></div>
+        <div class="light"><span class="bulb"></span><span class="bulb r"></span></div>
+        <div class="light"><span class="bulb"></span><span class="bulb r"></span></div>
+        <div class="light"><span class="bulb"></span><span class="bulb r"></span></div>
+      </div>
+      <div class="lights-msg" id="lightsMsg" aria-live="polite">
+        <p class="small">Svjetla se gase u</p>
+        <p class="big">09:25, INA Konjic</p>
+      </div>
+      <button class="replay" id="replay" type="button">Ponovi start</button>
+    </div>
+
+    <dl class="strip">
+      <div><dt>Polazak od kuće</dt><dd>08:10</dd></div>
+      <div><dt>Okupljanje, INA Konjic</dt><dd>09:10</dd></div>
+      <div class="hot"><dt>Start kolone</dt><dd>09:25</dd></div>
+      <div><dt>Doručak, Blagaj</dt><dd>10:40</dd></div>
+      <div class="hot"><dt>Cilj, Neum</dt><dd>13:15</dd></div>
+    </dl>
+  </div>
+</header>
+
+<main>
+<section id="timovi">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag" aria-hidden="true">P1–P3</span>
+      <h2>Startna postava</h2>
+      <p>Octavia startuje s prve pozicije i vodi kolonu, Elantra vozi druga, a Audi treći zatvara kolonu.</p>
+    </div>
+    <div class="edit-bar" id="editBar" hidden>
+      <button class="edit-btn" id="editToggle" type="button" aria-pressed="false">Uredi slike i imena</button>
+      <span class="edit-status" id="editStatus" role="status"></span>
+    </div>
+
+    <div class="podium" id="podium">
+      <article class="pcol p2" style="--team:var(--hyundai)" aria-label="Pozicija 2: Hyundai Elantra">
+        <div class="pcard">
+          <button class="slot car-shot" type="button" data-slot="ela-car" data-kind="car" data-alt="Hyundai Elantra 2021" disabled></button>
+          <div class="pdriver">
+            <button class="slot dphoto" type="button" data-slot="ela-d" data-kind="face" data-alt="Vozač Elantre" disabled></button>
+            <div class="pmeta"><p class="lbl">Vozač</p><h3 class="dname" data-name="ela-d">Hamza</h3><p class="carname">Hyundai Elantra 2021</p></div>
+          </div>
+          <span class="role">Sredina kolone</span>
+          <div class="crew">
+            <div class="p"><button class="slot cphoto" type="button" data-slot="ela-p1" data-kind="face" data-alt="Putnik" disabled></button><span class="pname" data-name="ela-p1">Ademir</span></div>
+            <div class="p"><button class="slot cphoto" type="button" data-slot="ela-p2" data-kind="face" data-alt="Putnica" disabled></button><span class="pname" data-name="ela-p2">Adna</span></div>
+            <div class="p"><button class="slot cphoto" type="button" data-slot="ela-p3" data-kind="face" data-alt="Putnica" disabled></button><span class="pname" data-name="ela-p3">Nedžla</span></div>
+          </div>
+        </div>
+        <div class="step"><b>2</b><span>4 osobe<br>drži razmak</span></div>
+      </article>
+
+      <article class="pcol p1" style="--team:var(--skoda)" aria-label="Pozicija 1: Škoda Octavia">
+        <div class="pcard">
+          <button class="slot car-shot" type="button" data-slot="oct-car" data-kind="car" data-alt="Škoda Octavia 2014" disabled></button>
+          <div class="pdriver">
+            <button class="slot dphoto" type="button" data-slot="oct-d" data-kind="face" data-alt="Vozač Octavije" disabled></button>
+            <div class="pmeta"><p class="lbl">Vozač</p><h3 class="dname" data-name="oct-d">Samir</h3><p class="carname">Škoda Octavia 2014</p></div>
+          </div>
+          <span class="role">Vodeće vozilo</span>
+          <div class="crew">
+            <div class="p"><button class="slot cphoto" type="button" data-slot="oct-p1" data-kind="face" data-alt="Putnik" disabled></button><span class="pname" data-name="oct-p1">Adin</span></div>
+            <div class="p"><button class="slot cphoto" type="button" data-slot="oct-p2" data-kind="face" data-alt="Putnik" disabled></button><span class="pname" data-name="oct-p2">Emrah</span></div>
+            <div class="p"><button class="slot cphoto" type="button" data-slot="oct-p3" data-kind="face" data-alt="Putnik" disabled></button><span class="pname" data-name="oct-p3">Dino</span></div>
+          </div>
+        </div>
+        <div class="step"><b>1</b><span>4 osobe<br>navigacija i tempo</span></div>
+      </article>
+
+      <article class="pcol p3" style="--team:var(--audi)" aria-label="Pozicija 3: Audi A4">
+        <div class="pcard">
+          <button class="slot car-shot" type="button" data-slot="aud-car" data-kind="car" data-alt="Audi A4 2012" disabled></button>
+          <div class="pdriver">
+            <button class="slot dphoto" type="button" data-slot="aud-d" data-kind="face" data-alt="Vozač Audija" disabled></button>
+            <div class="pmeta"><p class="lbl">Vozač</p><h3 class="dname" data-name="aud-d">Belmin</h3><p class="carname">Audi A4 2012</p></div>
+          </div>
+          <span class="role">Zatvarač kolone</span>
+          <div class="crew">
+            <div class="p"><button class="slot cphoto" type="button" data-slot="aud-p1" data-kind="face" data-alt="Putnica" disabled></button><span class="pname" data-name="aud-p1">Ema</span></div>
+          </div>
+        </div>
+        <div class="step"><b>3</b><span>2 osobe<br>javlja zaostajanje</span></div>
+      </article>
+    </div>
+    <p class="hint" id="teamHint">Slike vozača, putnika i auta dodaje organizator.</p>
+  </div>
+</section>
+<section id="staza">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag" aria-hidden="true">S1–S3</span>
+      <h2>Staza</h2>
+      <p>Plan A ide bez granice, preko Blagaja i Stoca. Plan B ide preko Čapljine i prijelaza Doljani / Metković. Udaljenosti su približne.</p>
+    </div>
+
+    <div class="plan-switch" role="group" aria-label="Izbor rute">
+      <button type="button" data-plan="a" aria-pressed="true">Plan A: bez granice</button>
+      <button type="button" data-plan="b" aria-pressed="false">Plan B: preko granice</button>
+    </div>
+
+    <div class="map-grid">
+      <div class="map">
+        <svg viewBox="0 0 800 540" role="img" aria-labelledby="mapTitle">
+          <title id="mapTitle">Shematska mapa rute od Sarajeva do Neuma</title>
+          <path class="r-path r-base" d="M690 70 C640 90 600 110 570 135 S505 175 480 195 C440 225 400 240 370 270 C360 285 375 300 395 312 C430 335 470 360 490 405 C500 440 420 470 330 480 C290 486 265 488 250 492"/>
+          <path class="r-path r-base" d="M395 312 C360 330 320 345 300 370 C280 395 240 410 210 425 C205 450 230 475 250 492" style="stroke-width:10;opacity:.6"/>
+          <path class="r-path r-main" d="M690 70 C640 90 600 110 570 135 S505 175 480 195 C440 225 400 240 370 270 C360 285 375 300 395 312"/>
+          <path class="r-path r-main r-a active" id="routeA" d="M395 312 C430 335 470 360 490 405 C500 440 420 470 330 480 C290 486 265 488 250 492"/>
+          <path class="r-path r-alt" id="routeB" d="M395 312 C360 330 320 345 300 370 C280 395 240 410 210 425 C205 450 230 475 250 492"/>
+
+          <g class="stop key"><circle cx="690" cy="70" r="10"/><text x="710" y="66">Sarajevo</text><text class="sub" x="710" y="84">Od kuće 08:10</text></g>
+          <g class="stop key"><circle cx="570" cy="135" r="10"/><text x="590" y="132">INA Konjic</text><text class="sub" x="590" y="149">Okupljanje i kafa 09:10</text></g>
+          <g class="stop"><circle cx="480" cy="195" r="7"/><text x="500" y="192">Jablanica</text><text class="sub" x="500" y="209">Bez zaustavljanja</text></g>
+          <g class="stop"><circle cx="370" cy="270" r="8"/><text x="248" y="266">Mostar</text><text class="sub" x="248" y="283">Prolaz prema Buni</text></g>
+          <g class="stop key"><circle cx="395" cy="312" r="10"/><text x="420" y="306">Blagaj</text><text class="sub" x="420" y="323">Doručak 10:40–11:45</text></g>
+          <g class="stop" id="stopStolac"><circle cx="490" cy="405" r="8"/><text x="512" y="402">Stolac</text><text class="sub" x="512" y="419">Plan A</text></g>
+          <g class="stop b" id="stopCap"><circle cx="300" cy="370" r="8"/><text x="170" y="366">Čapljina</text><text class="sub" x="170" y="383">Plan B</text></g>
+          <g class="stop b" id="stopGr"><circle cx="210" cy="425" r="8"/><text x="40" y="421">Doljani / Metković</text><text class="sub" x="40" y="438">Granica, pa Klek</text></g>
+          <g class="stop key"><circle cx="250" cy="492" r="11"/><text x="272" y="512">Neum</text><text class="sub" x="330" y="512">Cilj 13:15</text></g>
+        </svg>
+      </div>
+
+      <div class="sectors">
+        <div class="sector"><span class="s">S1</span><h3>Kuća – INA Konjic</h3><span class="km">≈ 60 km</span><p>Svako vozilo vozi samostalno, preko Tarčina (A1 / M17). Okupljanje i kafa na INA Konjic u 09:10. <a href="https://www.google.com/maps/search/?api=1&amp;query=43.6905925,17.985485" target="_blank" rel="noopener">Otvori u Google Maps</a></p></div>
+        <div class="sector"><span class="s">S2</span><h3>INA Konjic – Blagaj</h3><span class="km">≈ 92 km</span><p>Kolona kroz Jablanicu i Mostar do Blagaja, bez zaustavljanja. Doručak od 10:40 do 11:45.</p></div>
+        <div class="sector" data-sector="a"><span class="s">S3</span><h3>Blagaj – Stolac – Neum</h3><span class="km">≈ 75 km</span><p>Plan A, bez granice. Oko 1 h 30 min vožnje.</p></div>
+        <div class="sector" data-sector="b" hidden><span class="s">S3</span><h3>Blagaj – Čapljina – Neum</h3><span class="km">≈ 70 km</span><p>Plan B, dva granična prijelaza: Doljani / Metković i Klek / Neum. Dokumenti spremni u ruci.</p></div>
+        <div class="sector"><span class="s">Σ</span><h3>Ukupno</h3><span class="km">≈ 225 km</span><p>Oko 3 h 30 min čiste vožnje. Na dan puta uporedite obje rute u Google Maps ili Waze prije polaska iz Blagaja.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="raspored">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag" aria-hidden="true">T</span>
+      <h2>Raspored utrke</h2>
+      <p>Dolazak u Neum je planiran za 13:15. Svako vozilo samostalno dolazi do INA Konjic, odakle kreće kolona.</p>
+    </div>
+    <ol class="sched">
+      <li><time>08:10</time><div><h3>Polazak od kuće</h3><p>Svako vozilo kreće samostalno sa svog mjesta dogovora, iz Sarajeva najkasnije u 08:10. Ko kreće iz udaljenijeg dijela grada, kreće ranije.</p></div></li>
+      <li class="key"><time>09:10</time><div><h3>Okupljanje i kafa: INA Konjic</h3><p>Sva tri auta na benzinskoj pumpi INA Konjic. <a href="https://www.google.com/maps/search/?api=1&amp;query=43.6905925,17.985485" target="_blank" rel="noopener">Otvori lokaciju u Google Maps</a></p></div></li>
+      <li><time>09:20</time><div><h3>Brifing vozača</h3><p>5 minuta: prozivka svih 10 osoba, ruta, kontakti i Viber grupa „Kolona Neum“.</p></div></li>
+      <li class="key"><time>09:25</time><div><h3>Start kolone</h3><p>Octavia – Elantra – Audi, kroz Jablanicu i Mostar, bez zaustavljanja.</p></div></li>
+      <li><time>10:35</time><div><h3>Dolazak u Blagaj</h3><p>Parkiranje na mjestu dogovorenom s restoranom.</p></div></li>
+      <li class="key"><time>10:40</time><div><h3>Doručak</h3><p>10 osoba, narudžba poslata dan ranije. Račun plaćen do 11:40.</p></div></li>
+      <li><time>11:45</time><div><h3>Polazak prema Neumu</h3><p>Prozivka, pa plan A: Blagaj – Stolac – Neum, oko 1 h 30 min.</p></div></li>
+      <li class="key"><time>13:15</time><div><h3>Cilj: Neum</h3><p>Dolazak na smještaj. Adresa: upisati.</p></div></li>
+    </ol>
+    <p class="note">Satnica nema dodatne rezerve, pa doručak traje tačno do 11:40. Ako neko vozilo kasni na okupljanje, javlja u grupu; kolona čeka najviše 10 minuta, a kafa se tada pije usput. Plan B kreće iz Blagaja u isto vrijeme i bira se samo ako je cesta Stolac – Neum zatvorena ili spora.</p>
+  </div>
+</section>
+
+<section id="dorucak">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag" aria-hidden="true">PIT</span>
+      <h2>Pit stop: doručak</h2>
+      <p>Preporuka je Blagaj uz vrelo Bune: lijepo je i leži tačno na ruti plana A. Prijedlozi nisu provjereni na internetu, pa radno vrijeme i rezervaciju za 10 osoba potvrdite telefonom.</p>
+    </div>
+    <div class="rest">
+      <article class="rcard top">
+        <span class="badge">Preporuka</span>
+        <h3>Restorani uz vrelo Bune</h3>
+        <p class="where">Blagaj, ispod Tekije, oko 12 km od centra Mostara (npr. Restoran Vrelo)</p>
+        <dl><dt>Plus</dt><dd>Najljepši ambijent, uz rijeku, direktno na ruti plana A</dd><dt>Minus</dt><dd>Provjeriti radno vrijeme; par minuta hoda od parkinga</dd></dl>
+      </article>
+      <article class="rcard">
+        <h3>Hotel Mepas</h3>
+        <p class="where">Mostar sjever, pri ulasku iz Sarajeva</p>
+        <dl><dt>Plus</dt><dd>Veliki parking, pouzdan hotelski doručak za grupu</dd><dt>Minus</dt><dd>Manje šarma, moderni ambijent</dd></dl>
+      </article>
+      <article class="rcard">
+        <h3>Hotel Bristol</h3>
+        <p class="where">Uz Neretvu, blizu centra</p>
+        <dl><dt>Plus</dt><dd>Pogled na rijeku, blizu Starog grada</dd><dt>Minus</dt><dd>Ograničen parking, sporiji izlaz prema Blagaju</dd></dl>
+      </article>
+      <article class="rcard">
+        <h3>Restoran Šadrvan</h3>
+        <p class="where">Stari grad, kod Starog mosta</p>
+        <dl><dt>Plus</dt><dd>Tipična mostarska atmosfera</dd><dt>Minus</dt><dd>Parking i pješačenje oduzimaju 15–20 min; nije sigurno da služe doručak u to doba</dd></dl>
+      </article>
+    </div>
+    <dl class="facts">
+      <div><dt>Rezervacija</dt><dd>10 osoba, 10:35</dd></div>
+      <div><dt>Trajanje</dt><dd>65 minuta</dd></div>
+      <div><dt>Okvirni budžet</dt><dd>15–25 KM po osobi</dd></div>
+      <div><dt>Ukupno (procjena)</dt><dd>150–250 KM</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="pravila">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag" aria-hidden="true">FIA</span>
+      <h2>Sportski pravilnik</h2>
+      <p>Za razliku od prave Formule 1, ovdje pobjeđuje kolona koja stigne zajedno i bez kazni.</p>
+    </div>
+    <div class="golden">
+      <strong>0,0 ‰</strong>
+      <p>Vozači ne piju nimalo alkohola cijeli dan, a niko ne vozi iznad ograničenja da bi sustigao kolonu.</p>
+    </div>
+    <div class="rules">
+      <div class="rule-col">
+        <h3>U vožnji</h3>
+        <ol>
+          <li>Svi vezani, i na zadnjim sjedištima.</li>
+          <li>Vozač ne dira mobitel; poruke i navigaciju vodi suvozač.</li>
+          <li>Kratka svjetla upaljena cijelo vrijeme.</li>
+          <li>Poštuju se sva ograničenja brzine.</li>
+        </ol>
+      </div>
+      <div class="rule-col">
+        <h3>U koloni</h3>
+        <ol>
+          <li>Redoslijed je stalan: Octavia – Elantra – Audi.</li>
+          <li>Niko ne pretiče vozilo iz kolone.</li>
+          <li>Razmak najmanje 2 sekunde, kroz kanjon Neretve više.</li>
+          <li>Ako se kolona razdvoji, Octavia usporava ili čeka na prvom sigurnom mjestu.</li>
+          <li>Audi odmah javlja u grupu ako stane ili zaostane.</li>
+        </ol>
+      </div>
+      <div class="rule-col">
+        <h3>Pauze i doručak</h3>
+        <ol>
+          <li>Vrijeme polaska je vrijeme kada auta kreću, ne kada se počinje skupljati.</li>
+          <li>Prije svakog polaska vozač prebroji putnike i javi „kompletno“.</li>
+          <li>U restoranu kulturno i umjereno glasno; račun do 11:40.</li>
+          <li>Smeće se baca na pumpi, ne kroz prozor.</li>
+          <li>Na granici (plan B): tiho, dokumenti u ruci, bez snimanja.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="speed" aria-label="Ograničenja brzine">
+      <div class="sign"><b>50</b><span>Naselje<br>BiH i Hrvatska</span></div>
+      <div class="sign"><b>80</b><span>Van naselja<br>BiH</span></div>
+      <div class="sign"><b>90</b><span>Van naselja<br>Hrvatska</span></div>
+      <div class="sign"><b>100</b><span>Brza cesta<br>BiH</span></div>
+      <div class="sign"><b>130</b><span>Autoput<br>BiH</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="pregled">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag" aria-hidden="true">✓</span>
+      <h2>Tehnički pregled</h2>
+      <p>Svaki vozač prođe listu dan prije puta i javi u grupu da je auto spreman. Kvačice se čuvaju u ovom pregledniku.</p>
+    </div>
+    <div class="checks" id="checks">
+      <div class="cgroup" data-group="v">
+        <h3>Vozilo <small data-count></small></h3><div class="meter"><i></i></div>
+        <label><input type="checkbox" data-key="v1"><span>Rezervoar barem do pola</span></label>
+        <label><input type="checkbox" data-key="v2"><span>Pritisak u gumama za puno opterećenje</span></label>
+        <label><input type="checkbox" data-key="v3"><span>Ulje, rashladna tečnost, tečnost za brisače</span></label>
+        <label><input type="checkbox" data-key="v4"><span>Svjetla i žmigavci rade</span></label>
+        <label><input type="checkbox" data-key="v5"><span>Rezervni točak, dizalica i ključ</span></label>
+        <label><input type="checkbox" data-key="v6"><span>Prva pomoć, trokut, prsluk, rezervne sijalice</span></label>
+        <label><input type="checkbox" data-key="v7"><span>Audi i Octavia: akumulator i kočnice</span></label>
+      </div>
+      <div class="cgroup" data-group="d">
+        <h3>Dokumenti <small data-count></small></h3><div class="meter"><i></i></div>
+        <label><input type="checkbox" data-key="d1"><span>Lična karta ili pasoš za svih 10 osoba (obavezno za plan B)</span></label>
+        <label><input type="checkbox" data-key="d2"><span>Vozačka i saobraćajna dozvola</span></label>
+        <label><input type="checkbox" data-key="d3"><span>Polica osiguranja i zeleni karton (plan B)</span></label>
+        <label><input type="checkbox" data-key="d4"><span>Ovlaštenje vlasnika, ako vozač nije vlasnik</span></label>
+      </div>
+      <div class="cgroup" data-group="l">
+        <h3>Lično <small data-count></small></h3><div class="meter"><i></i></div>
+        <label><input type="checkbox" data-key="l1"><span>Napunjen mobitel i punjač za auto</span></label>
+        <label><input type="checkbox" data-key="l2"><span>Voda i grickalice</span></label>
+        <label><input type="checkbox" data-key="l3"><span>Gotovina u KM za doručak i parking</span></label>
+        <label><input type="checkbox" data-key="l4"><span>Lijekovi, sunčane naočale, jakna</span></label>
+      </div>
+    </div>
+    <button class="reset" type="button" id="resetChecks">Poništi kvačice</button>
+  </div>
+</section>
+
+<section id="kontakti">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag" aria-hidden="true">RC</span>
+      <h2>Kontrola utrke</h2>
+      <p>Kod kvara ili nezgode kolona staje zajedno, a Octavia odlučuje da li ostali nastavljaju. Brojevi su navedeni po sjećanju; potvrdite ih na stranicama BIHAMK-a i HAK-a.</p>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Služba</th><th>BiH</th><th>Hrvatska (plan B)</th></tr></thead>
+        <tbody>
+          <tr><td>Policija</td><td class="n">122</td><td class="n">192 / 112</td></tr>
+          <tr><td>Hitna pomoć</td><td class="n">124</td><td class="n">194 / 112</td></tr>
+          <tr><td>Vatrogasci</td><td class="n">123</td><td class="n">193 / 112</td></tr>
+          <tr><td>Pomoć na cesti</td><td class="n">1282</td><td class="n">1987</td></tr>
+          <tr><td>Vozači, restoran, smještaj</td><td colspan="2">Upisati brojeve prije puta</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="planb">
+      <div><h3>Kvar jednog auta</h3><p>Putnici prelaze u druga dva auta (Audi prima još 3, ostali po 1). Vozač čeka pomoć na cesti s jednom osobom.</p></div>
+      <div><h3>Zastoj na M17</h3><p>Javiti restoranu i skratiti doručak; polazak prema Neumu ostaje 11:45.</p></div>
+      <div><h3>Cesta Stolac – Neum spora</h3><p>Prelazak na plan B: Čapljina – Doljani / Metković – Klek – Neum.</p></div>
+      <div><h3>Fale dokumenti na planu B</h3><p>Taj auto ostaje na planu A preko Stoca.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="flag" aria-hidden="true"></div>
+    <p>Velika nagrada Neuma 2026. Sva vremena i udaljenosti su procjene; stanje na cestama provjerite kod BIHAMK-a na dan puta.</p>
+  </div>
+</footer>
+
+<input type="file" accept="image/*" id="fileIn" hidden>
+
+<script>
+(function(){
+  var store = {
+    get:function(k){try{return localStorage.getItem('gpneum:'+k);}catch(e){return null;}},
+    set:function(k,v){try{localStorage.setItem('gpneum:'+k,v);return true;}catch(e){return false;}},
+    del:function(k){try{localStorage.removeItem('gpneum:'+k);}catch(e){}}
+  };
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* start lights */
+  var lights = Array.prototype.slice.call(document.querySelectorAll('#lights .light'));
+  var msg = document.getElementById('lightsMsg');
+  var timers = [];
+  function runLights(){
+    timers.forEach(clearTimeout); timers = [];
+    msg.classList.remove('go');
+    msg.querySelector('.small').textContent = 'Svjetla se gase u';
+    lights.forEach(function(l){l.classList.remove('on');});
+    if(reduce){ msg.classList.add('go'); return; }
+    lights.forEach(function(l,i){ timers.push(setTimeout(function(){l.classList.add('on');}, 500 + i*700)); });
+    timers.push(setTimeout(function(){
+      lights.forEach(function(l){l.classList.remove('on');});
+      msg.querySelector('.small').textContent = 'Svjetla su se ugasila. Start:';
+      msg.classList.add('go');
+    }, 500 + 5*700 + 900));
+  }
+  document.getElementById('replay').addEventListener('click', runLights);
+  runLights();
+
+  /* podium: photos + names, shared, editable only by editors */
+  var CAR = '<svg viewBox="0 0 320 200" aria-hidden="true"><path d="M30 138 C30 124 40 116 56 113 L96 106 L132 80 C142 73 152 70 166 70 L214 70 C228 70 238 75 248 84 L272 108 C284 110 294 118 294 132 L294 140 C294 146 290 150 284 150 L36 150 C32 150 30 146 30 140Z" fill="currentColor" opacity=".9"/><path d="M110 106 L138 86 C144 82 150 80 158 80 L178 80 L178 106Z M188 80 L212 80 C222 80 230 84 236 90 L252 106 L188 106Z" fill="#0B0E12" opacity=".55"/><circle cx="92" cy="150" r="20" fill="#0B0E12" opacity=".8"/><circle cx="92" cy="150" r="9" fill="currentColor"/><circle cx="234" cy="150" r="20" fill="#0B0E12" opacity=".8"/><circle cx="234" cy="150" r="9" fill="currentColor"/><path d="M20 172 L300 172" stroke="currentColor" stroke-width="2" opacity=".35"/></svg>';
+  var FACE = '<svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" fill="currentColor" opacity=".10"/><path d="M20 64 C18 38 34 22 54 22 C72 22 84 36 84 54 L84 66 C84 72 80 76 74 76 L30 76 C24 76 20 71 20 64Z" fill="currentColor"/><path d="M46 46 L82 46 C83 50 84 54 84 58 L50 58 C46 58 44 55 44 52 C44 49 45 47 46 46Z" fill="#0B0E12" opacity=".85"/><path d="M24 66 L60 66" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".7"/></svg>';
+  var state = {photos:{}, names:{}}, editing = false, canEdit = false, db = null, assets = null;
+  var slots = document.querySelectorAll('#podium .slot');
+  var nameEls = document.querySelectorAll('#podium [data-name]');
+  var statusEl = document.getElementById('editStatus');
+  Array.prototype.forEach.call(nameEls, function(el){ el.dataset.def = el.textContent; });
+  function status(t, err){ statusEl.textContent = t || ''; statusEl.classList.toggle('err', !!err); }
+  function renderPodium(){
+    Array.prototype.forEach.call(slots, function(s){
+      var id = state.photos[s.dataset.slot], cueText = id ? 'Promijeni' : 'Dodaj sliku';
+      var want = id ? 'img:'+id : 'ph';
+      if(s.dataset.shown !== want){
+        if(id){ s.innerHTML = '<img alt="">'; var im = s.querySelector('img'); im.alt = s.dataset.alt; im.src = '/_blob/' + id; im.onerror = function(){ s.innerHTML = (s.dataset.kind === 'car' ? CAR : FACE) + '<span class="cue"></span>'; s.querySelector('.cue').textContent = 'Dodaj sliku'; }; s.insertAdjacentHTML('beforeend','<span class="cue"></span>'); }
+        else { s.innerHTML = (s.dataset.kind === 'car' ? CAR : FACE) + '<span class="cue"></span>'; }
+        s.dataset.shown = want;
+      }
+      var c = s.querySelector('.cue'); if(c) c.textContent = cueText;
+      s.disabled = !editing;
+      s.setAttribute('aria-label', (id ? 'Promijeni sliku: ' : 'Dodaj sliku: ') + s.dataset.alt);
+    });
+    Array.prototype.forEach.call(nameEls, function(el){
+      if(document.activeElement !== el) el.textContent = state.names[el.dataset.name] || el.dataset.def;
+      try { el.contentEditable = editing ? 'plaintext-only' : 'false'; } catch(e){ el.contentEditable = editing ? 'true' : 'false'; }
+    });
+  }
+  renderPodium();
+
+  function save(){
+    if(!db) return Promise.reject({code:'not_granted'});
+    return db.doc('gallery/team').set({photos: state.photos, names: state.names});
+  }
+  function shrink(file, kind){
+    return new Promise(function(res, rej){
+      var url = URL.createObjectURL(file), img = new Image();
+      img.onload = function(){
+        var c = document.createElement('canvas'), ctx;
+        if(kind === 'face'){
+          var m = Math.min(img.width, img.height), s = Math.min(480, m);
+          c.width = s; c.height = s; ctx = c.getContext('2d');
+          ctx.drawImage(img, (img.width-m)/2, (img.height-m)/2, m, m, 0, 0, s, s);
+        } else {
+          var w = Math.min(1600, img.width), h = Math.round(img.height * w / img.width);
+          c.width = w; c.height = h; ctx = c.getContext('2d'); ctx.drawImage(img, 0, 0, w, h);
+        }
+        URL.revokeObjectURL(url);
+        c.toBlob(function(b){ b ? res(b) : rej({code:'invalid_request'}); }, 'image/jpeg', .86);
+      };
+      img.onerror = function(){ URL.revokeObjectURL(url); rej({code:'unsupported_type'}); };
+      img.src = url;
+    });
+  }
+  var MSG = {too_large:'Slika je prevelika.', unsupported_type:'Ovaj format slike nije podržan; probaj JPG ili PNG.', quota_or_state:'Prostor za slike je popunjen.', rate_limited:'Previše pokušaja; pričekaj malo pa probaj ponovo.', not_granted:'Nemaš pravo dodavanja slika na ovoj stranici.', upstream_auth:'Prijava je istekla; osvježi stranicu.'};
+  var fileIn = document.getElementById('fileIn'), target = null;
+  Array.prototype.forEach.call(slots, function(s){
+    s.addEventListener('click', function(){ if(!editing || !assets) return; target = s; fileIn.value = ''; fileIn.click(); });
+  });
+  fileIn.addEventListener('change', function(){
+    var f = fileIn.files && fileIn.files[0], s = target; if(!f || !s) return;
+    s.classList.add('busy'); status('Učitavam sliku…');
+    shrink(f, s.dataset.kind).then(function(b){ return assets.upload(b, {type:'image/jpeg'}); })
+      .then(function(r){ state.photos[s.dataset.slot] = r.id; renderPodium(); return save(); })
+      .then(function(){ status('Slika je sačuvana i vidljiva svima.'); })
+      .catch(function(e){ status(MSG[e && e.code] || 'Slika nije sačuvana; probaj ponovo.', true); })
+      .then(function(){ s.classList.remove('busy'); });
+  });
+  Array.prototype.forEach.call(nameEls, function(el){
+    el.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ e.preventDefault(); el.blur(); } });
+    el.addEventListener('blur', function(){
+      if(!editing) return;
+      var t = el.textContent.trim(), k = el.dataset.name;
+      if(!t){ delete state.names[k]; el.textContent = el.dataset.def; }
+      else if(t === el.dataset.def){ delete state.names[k]; }
+      else state.names[k] = t;
+      save().then(function(){ status('Ime je sačuvano.'); }).catch(function(){ status('Ime nije sačuvano; probaj ponovo.', true); });
+    });
+  });
+  document.getElementById('editToggle').addEventListener('click', function(){
+    editing = !editing;
+    this.setAttribute('aria-pressed', String(editing));
+    this.textContent = editing ? 'Završi uređivanje' : 'Uredi slike i imena';
+    document.getElementById('podium').classList.toggle('editing', editing);
+    status(editing ? 'Klikni na sliku da je dodaš ili promijeniš, a na ime da ga ispraviš.' : '');
+    renderPodium();
+  });
+
+  if(window.claude && typeof window.claude.use === 'function'){
+    window.claude.use('db').then(function(d){
+      if(!d) return;
+      db = d;
+      db.doc('gallery/team').onSnapshot(function(snap){
+        var v = (snap && snap.exists && snap.data()) || {};
+        state.photos = v.photos || {}; state.names = v.names || {};
+        renderPodium();
+      }, function(){});
+    });
+    Promise.all([window.claude.use('assets'), window.claude.use('user')]).then(function(r){
+      assets = r[0]; var u = r[1];
+      if(!assets || !u) return;
+      return u.canEdit().then(function(ok){
+        canEdit = !!ok;
+        if(canEdit){ document.getElementById('editBar').hidden = false; document.getElementById('teamHint').textContent = 'Kao organizator vidiš dugme za uređivanje; ostali vide samo gotove slike i imena.'; }
+      });
+    }).catch(function(){});
+  }
+  /* plan switch */
+  var rA = document.getElementById('routeA'), rB = document.getElementById('routeB');
+  var bStops = [document.getElementById('stopCap'), document.getElementById('stopGr')];
+  var stolac = document.getElementById('stopStolac');
+  var btns = document.querySelectorAll('.plan-switch button');
+  Array.prototype.forEach.call(btns, function(b){
+    b.addEventListener('click', function(){
+      var p = b.dataset.plan;
+      Array.prototype.forEach.call(btns, function(x){ x.setAttribute('aria-pressed', String(x === b)); });
+      rA.classList.toggle('active', p === 'a'); rA.classList.toggle('dim', p === 'b');
+      rB.classList.toggle('active', p === 'b');
+      bStops.forEach(function(s){ s.classList.toggle('on', p === 'b'); });
+      stolac.style.opacity = p === 'b' ? .5 : 1;
+      document.querySelector('[data-sector="a"]').hidden = p !== 'a';
+      document.querySelector('[data-sector="b"]').hidden = p !== 'b';
+    });
+  });
+
+  /* checklist */
+  var groups = document.querySelectorAll('.cgroup');
+  function count(){
+    Array.prototype.forEach.call(groups, function(g){
+      var all = g.querySelectorAll('input'), done = g.querySelectorAll('input:checked').length;
+      g.querySelector('[data-count]').textContent = done + '/' + all.length;
+      g.querySelector('.meter i').style.width = (done/all.length*100) + '%';
+    });
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('#checks input'), function(i){
+    i.checked = store.get('chk:'+i.dataset.key) === '1';
+    i.addEventListener('change', function(){ if(i.checked) store.set('chk:'+i.dataset.key,'1'); else store.del('chk:'+i.dataset.key); count(); });
+  });
+  document.getElementById('resetChecks').addEventListener('click', function(){
+    Array.prototype.forEach.call(document.querySelectorAll('#checks input'), function(i){ i.checked = false; store.del('chk:'+i.dataset.key); });
+    count();
+  });
+  count();
+})();
+</script>
+</body>
+</html>
